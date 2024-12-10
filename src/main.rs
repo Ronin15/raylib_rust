@@ -17,6 +17,7 @@ fn main() {
 
     while !rl.window_should_close() {
         let mut r = rl.begin_drawing(&thread);
+        r.clear_background(Color::BLACK);
         r.draw_fps(100, 100);
         r.draw_texture_v(&tex, &player, Color::WHITE);
       
