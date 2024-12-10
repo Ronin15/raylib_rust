@@ -1,6 +1,5 @@
 
 use raylib::prelude::*;
-const TARGET_FPS:u32 = 60;
 
 fn main() {
 
@@ -10,7 +9,6 @@ fn main() {
         .vsync()
         .build();
 
-       rl.set_target_fps(TARGET_FPS);
        let player = Vector2::new(500.0,500.0);
        
        let tex = rl.load_texture(&thread,"assests/img/hammerForge.png").unwrap();
